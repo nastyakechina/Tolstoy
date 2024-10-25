@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'GeorgiaBold';
+    src: url('./style/georgiab.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --header-height: 180px;
+    --header-color: #8B4513; /*#A0522D*/
+    --text-color: #4E3B31;
+    --background-color: #2F3E46;
+    --margin-color: #EDEBE4;
+}
+
+h1, h2 {
+    font-family: 'GeorgiaBold', serif;
+
+}
+
+h1 {
+    
+    font-size: 36px;
+    color: var(--header-color);
+	margin: 10px 0;
+	
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--header-color);
+	padding-top: 30px;
+}
+
+h4 {
+    font-size: 28px;
+    color: var(--header-color);
+	margin: 20px 0;
+}
+
+.h3 {
+    font-size: 28px;
+    color: var(--header-color);
+	margin: 20px 0;
+    text-decoration: none; /* Убирает подчеркивание */
+	
+}
+
+
+.h3:hover {
+    color: #555555; /* Замените #555555 на нужный цвет при наведении */
+}
+
+
+p {
+	padding-top: 0px;
+	margin: 10px 0;
+	
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    padding-top: var(--text-color);
+    margin: 0 auto;
+    background-color: var(--margin-color);
+    font-family: 'GeorgiaBold', serif;
+
+
+.head {
+
+    background: #EDEBE4;; /* фон шапки */
+    position: fixed; /* фиксированное позиционирование */
+    width: 100%; /* ширина 100% */
+    height: var(--header-height); /* высота */
+    display: flex; /* используем флекс для расположения элементов */
+    flex-direction: column; /* размещаем элементы по вертикали */
+    align-items: center; /* выравнивание по центру по горизонтали */
+    top: 0; /* верхняя граница */
+    left: 0; /* левая граница */
+    z-index: 999; /* уровень наложения */
+    margin: 0 auto; /* отступы для шапки */
+ 
+}
+
+.nickname {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--header-color);
+	text-align: center;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+	
+
+}
+
+.lid {
+    color: var(--text-color);
+    font-size: 22px;
+    padding: 20px;
+    font-style: italic;
+	text-align: center;
+}
+
+.inset {
+    font-style: italic;
+    color: #555;
+	margin-top: 30px;
+    border-left: 5px solid #ccc;
+    padding-left: 15px;
+	padding: 15px;
+	
+
+}
+
+.mainTxt {
+	color: var(--text-color);
+	padding-top: var(--header-height);
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.navigation {
+    padding: 19px 0 19px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--background-color);
+}
+
+.navLink {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 15px;
+}
+
+.floor {
+    background: #B86E50;
+    display: flex;
+    margin-top: 50px;
+}
+
+.txt-floor {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #EEE8E1;
+    font-size: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    line-height: 21px;
+}
+
+a:hover {
+    color: rgb(191, 191, 191);
+}
